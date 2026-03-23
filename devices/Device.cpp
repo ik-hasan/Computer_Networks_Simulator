@@ -26,6 +26,7 @@ void Device::receive(const string& data, Device* sender) {
          << sender->getId() << "]: " << data << endl;
 }
 
+
 void Device::showConnections() const {
     cout << "[" << id << "] connected to: ";
     for (auto device : connections) {

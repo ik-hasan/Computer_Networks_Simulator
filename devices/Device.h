@@ -1,6 +1,9 @@
 #ifndef DEVICE_H
 #define DEVICE_H
 
+#include "../network/Frame.h"
+
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -23,6 +26,7 @@ public:
     // virtual functions (will be overridden later)
     virtual void send(const string& data);
     virtual void receive(const string& data, Device* sender);
+
 
     // helper to print connections (for testing)
     void showConnections() const;
